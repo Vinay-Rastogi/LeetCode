@@ -40,7 +40,7 @@ public:
               helper(v[i].getList());
         }
 
-    }
+    };
 
     NestedIterator(vector<NestedInteger> &nestedList) {
 
