@@ -41,7 +41,7 @@ int main()
     vector<int> nums = {23, 2, 6, 4, 7};
     int k = 13;
 
-    cout << sl.checkSubarraySum(nums, k);
+    cout << sl.checkSubarraySum(nums, k);   
 
     return 0;
 }
