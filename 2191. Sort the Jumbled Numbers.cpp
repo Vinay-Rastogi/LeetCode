@@ -52,7 +52,7 @@ int main()
     vector<int> mapping = {8, 9, 4, 0, 2, 1, 3, 5, 7, 6};
     vector<int> nums = {991, 338, 38};
 
-    vector<int> ans = sl.sortJumbled(mapping, nums)
+    vector<int> ans = sl.sortJumbled(mapping, nums);
 
     return 0;
 }
