@@ -35,7 +35,7 @@ int main()
     Solution sl;
     vector<vector<int>> arrays = {{1, 2, 3}, {4, 5}, {1, 2, 3}};
 
-    cout << sl.maxDistance(array);
+    cout << sl.maxDistance(arrays);
 
     return 0;
 }
