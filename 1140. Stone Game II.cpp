@@ -1,11 +1,11 @@
-class Solution
-{
+#include <bits/stdc++.h>
+using namespace std;
+
+class Solution {
 public:
     int dp[101][201];
 
-    int helper(int i, int m, vector<int> &piles)
-    {
-
+    int helper(int i, int m, vector<int>& piles) {
         if (i >= piles.size())
             return 0;
 
@@ -15,9 +15,7 @@ public:
         int total = 0;
         int ans = INT_MIN;
 
-        for (int j = 0; j < 2 * m; j++)
-        {
-
+        for (int j = 0; j < 2 * m; j++) {
             if (i + j < piles.size())
                 total += piles[i + j];
 
@@ -26,10 +24,9 @@ public:
 
         return dp[i][m] = ans;
     }
-    int stoneGameII(vector<int> &piles)
-    {
 
-        memset(dp, -1, sizeof dp);
+    int stoneGameII(vector<int>& piles) {
+        memset(dp, -1, sizeof(dp));
 
         int sum = 0;
         for (auto x : piles)
@@ -40,3 +37,14 @@ public:
         return (sum + diff) / 2;
     }
 };
+
+int main() {
+    Solution sol;
+
+    vector<int> piles = {2, 7, 9, 4, 4};  // Example input
+    int result = sol.stoneGameII(piles);
+
+    cout << "Maximum stones Alex can collect: " << result << endl;
+
+    return 0;
+}
