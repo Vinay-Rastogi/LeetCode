@@ -1,3 +1,8 @@
+#include <iostream>
+#include <bits/stdc++.h>
+
+using namespace std;
+
 class Solution
 {
 public:
@@ -43,3 +48,17 @@ public:
         return dist[end];
     }
 };
+
+int main()
+{
+    Solution sl;
+    int n = 3;
+    vector<vector<int>> edges = {{0, 1}, {1, 2}, {0, 2}};
+    vector<double> succProb = {0.5, 0.5, 0.2};
+    int start = 0;
+    int end = 2;
+
+    cout << sl.maxProbability(n, edges, succProb, start, end);
+
+    return 0;
+}
