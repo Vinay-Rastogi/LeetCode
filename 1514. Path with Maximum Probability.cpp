@@ -53,8 +53,8 @@ int main()
 {
     Solution sl;
     int n = 3;
-    vector<vector<int>> edges = {{0, 1}, {1, 2}, {0, 2}};
-    vector<double> succProb = {0.5, 0.5, 0.2};
+    vector<vector<int>> edges = {{0, 1}};
+    vector<double> succProb = {0.5};
     int start = 0;
     int end = 2;
 
