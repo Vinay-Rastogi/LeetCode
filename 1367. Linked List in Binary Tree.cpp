@@ -60,23 +60,21 @@ TreeNode* createTreeNode(int val, TreeNode* left = nullptr, TreeNode* right = nu
 }
 
 int main() {
-    
+   
     vector<int> listValues = {1, 4, 2};
     ListNode* head = createLinkedList(listValues);
 
+  
     TreeNode* root = createTreeNode(1,
                     createTreeNode(4,
                         createTreeNode(2),
                         createTreeNode(6)),
                     createTreeNode(3));
 
-    
     Solution solution;
 
-    
     bool result = solution.isSubPath(head, root);
 
-    
     cout << (result ? "True" : "False") << endl;
 
     return 0;
