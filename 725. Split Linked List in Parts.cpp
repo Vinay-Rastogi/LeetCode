@@ -51,3 +51,18 @@ public:
         return parts;
     }
 };
+
+int main()
+{
+
+    Solution sl;
+    ListNode *head = new ListNode(1);
+    head->next = new ListNode(2);
+    head->next->next = new ListNode(3);
+
+    int k = 5;
+
+    vector<ListNode *> ans = sl.splitListToParts(head, k);
+
+    return 0;
+}
