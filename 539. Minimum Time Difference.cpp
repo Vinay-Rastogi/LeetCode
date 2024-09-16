@@ -39,7 +39,7 @@ public:
 int main()
 {
     Solution sl;
-    vector<string> timePoints = {"23:59", "00:00"};
+    vector<string> timePoints = {"00:00","23:59","00:00"};
 
     cout << sl.findMinDifference(timePoints);
 
