@@ -36,8 +36,8 @@ int main()
 
     Solution sl;
 
-    string s = "leetscode";
-    vector<string> dictionary = {"leet", "code", "leetcode"};
+    string s = "sayhelloworld";
+    vector<string> dictionary = {"hello","world"};
 
     cout << sl.minExtraChar(s, dictionary);
 
